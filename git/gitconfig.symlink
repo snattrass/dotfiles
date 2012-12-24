@@ -1,41 +1,36 @@
-# Sample gitconfig
-#
-# You probably want to change the [user] section here since you are not me.
-# Also search in this file for FIXME- you'll want to well, fix them.
-
-[hub]
-        protocol = https
 [user]
-        name = Zach Holman
-        email = zach@zachholman.com
-        helper = /opt/boxen/bin/boxen-git-credential
-        # FIXME: You'll want the `helper` line below; delete the one above.
-        # helper = osxkeychain
+        name = Simon Nattrass 
+        email = FIXME 
+
 [alias]
         co = checkout
+        ci = commit
+        st = status
+        br = branch
+        df = diff
+        dc = diff --cached
+        ls = ls-files
+        lg = log -p
+        lol = log --graph --decorate --pretty=oneline --abbrev-commit
+        lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+        hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+        type = cat-file -t
+        dump = cat-file -p
+
+        # show ignored files
+        ign = ls-files -o -i --execlude-standard
+
         promote = !$ZSH/bin/git-promote
         wtf     = !$ZSH/bin/git-wtf
         rank-contributers = !$ZSH/bin/git-rank-contributers
         count   = !git shortlog -sn
+
 [color]
         diff = auto
         status = auto
         branch = auto
         ui = true
-[core]
-        excludesfile = /opt/boxen/config/git/gitignore
-        # FIXME: You'll want the `excludesfile` line below; delete the one above.
-        # excludesfile = ~/.gitignore
-        editor = vim
-[apply]
-        whitespace = nowarn
-[mergetool]
-        keepBackup = false
-[difftool]
-        prompt = false
-[help]
-        autocorrect = 1
 
-# FIXME: You can nuke all of this on your machine.
-[credential]
-        helper = /opt/boxen/bin/boxen-git-credential
+[core]
+        excludesfile = ~/.gitignore
+        eitor = gvim
