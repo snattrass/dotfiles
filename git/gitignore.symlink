@@ -1,3 +1,9 @@
+#
+# Global git ignore linked in .gitconfig
+#
+
+# OSX
 .DS_Store
-*~
+
+# Vim
 *.swp
