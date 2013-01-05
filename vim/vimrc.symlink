@@ -65,6 +65,7 @@ nmap <leader>n :set number!<CR>
 " -------------------------------------------------------------
 "  UI
 " -------------------------------------------------------------
+
 " Syntax highlighting always please
 syntax on
 
@@ -95,14 +96,16 @@ set mat=2 "How many tenths of a second to blink
 set encoding=utf8
 
 " -------------------------------------------------------------
-"  Statusline
+"  Powerline
 " -------------------------------------------------------------
+
 " always show the statusline
 set laststatus=2
 
-" format the statusline
-set statusline=%<\ %n:%f\ %m%r%y%=%-35.(line:\ %l\ of\ %L,\ col:\ %c%V\ (%P)%)
-
+" show fancy symbols
+let g:Powerline_symbols = 'fancy'
+"let g:Powerline_theme = 'solarized256'
+"let g:Powerline_colorscheme = 'solarized256'
 
 " -------------------------------------------------------------
 "  Files, backups and undo
