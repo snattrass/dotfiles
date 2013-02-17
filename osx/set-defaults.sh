@@ -41,25 +41,25 @@ defaults write com.apple.BezelServices kDimTime -int 300
 ###############################################################################
 
 # Finder: allow quitting via ⌘ + Q; doing so will also hide desktop icons
-defaults write com.apple.finder QuitMenuItem -bool true
+defaults write com.apple.finder QuitMenuItem true
 
 # Finder: show hidden files by default
 #defaults write com.apple.finder AppleShowAllFiles -bool true
 
 # Finder: show all filename extensions
-defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+defaults write NSGlobalDomain AppleShowAllExtensions true
 
 # Finder: show status bar
-defaults write com.apple.finder ShowStatusBar -bool true
+defaults write com.apple.finder ShowStatusBar true
 
 # Display full POSIX path as Finder window title
-defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+defaults write com.apple.finder _FXShowPosixPathInTitle true
 
 # Disable the warning when changing a file extension
 #defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
 # Avoid creating .DS_Store files on network volumes
-defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 
 # Always open everything in Finder's list view. This is important.
 #defaults write com.apple.Finder FXPreferredViewStyle Nlsv
