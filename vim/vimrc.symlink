@@ -114,3 +114,16 @@ let g:Powerline_symbols = 'fancy'
 set nobackup
 set nowb
 set noswapfile
+
+" -------------------------------------------------------------
+"  Moving around, tabs and buffers
+" -------------------------------------------------------------
+" Tabs
+map <leader>tn :tabnew<cr>
+map <leader>te :tabedit
+map <leader>tc :tabclose<cr>
+map <leader>tm :tabmove
+
+" User left/right cursor keys for something usefull
+map <right> :bn<cr>
+map <left> :bp<cr>
