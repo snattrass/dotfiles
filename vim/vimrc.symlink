@@ -93,20 +93,17 @@ set incsearch "Make search act like search in modern browsers
 set showmatch "Show matching bracets when text indicator is over them
 set mat=2 "How many tenths of a second to blink
 
-set encoding=utf8
+set encoding=utf-8
 
 " -------------------------------------------------------------
-"  Powerline
+"  Airline
 " -------------------------------------------------------------
-
-" always show the statusline
 set laststatus=2
+let g:airline_powerline_fonts=1
+set guifont=Source\ Code\ Pro\ for\ Powerline:h13 "make sure escaped
 
-" show fancy symbols
-let g:Powerline_symbols = 'fancy'
-"let g:Powerline_theme = 'solarized256'
-"let g:Powerline_colorscheme = 'solarized256'
-
+let g:airline_enable_branch=1
+let g:airline#extensions#tabline#enabled=1
 " -------------------------------------------------------------
 "  Files, backups and undo
 " -------------------------------------------------------------
