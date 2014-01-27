@@ -4,6 +4,16 @@
 
 # OSX
 .DS_Store
+DS_Store?
+.AppleDouble
+
+# Thumbnails
+._*
+
+# Files that might appear on an external disk
+.Spotlight-V100
+.Trashes
 
 # Vim
 *.swp
+
