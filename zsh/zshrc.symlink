@@ -18,5 +18,8 @@ fi
 autoload -U compinit
 compinit
 
+# Java
+export JAVA_HOME=/usr/bin/java
+
 # load every completion after autocomplete loads
 for config_file ($ZSH/**/completion.zsh) source $config_file
