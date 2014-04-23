@@ -89,6 +89,13 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 
 
 ###############################################################################
+# UI                                                                          #
+###############################################################################
+# Get rid of the useless dashboard
+defaults write com.apple.dashboard mcx-disabled -boolean YES
+
+
+###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
 
