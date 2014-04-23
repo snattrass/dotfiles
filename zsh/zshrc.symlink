@@ -19,7 +19,7 @@ autoload -U compinit
 compinit
 
 # Java
-export JAVA_HOME=/usr/bin/java
+export JAVA_HOME=$(/usr/libexec/java_home)
 
 # load every completion after autocomplete loads
 for config_file ($ZSH/**/completion.zsh) source $config_file
