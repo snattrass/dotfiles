@@ -31,4 +31,4 @@
 
 [core]
     excludesfile = ~/.gitignore
-    eitor = gvim
+    editor = gvim
