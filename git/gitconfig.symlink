@@ -34,3 +34,4 @@
 [core]
     excludesfile = ~/.gitignore
 	editor = gvim -f
+	autocrlf = input
