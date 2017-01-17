@@ -53,11 +53,11 @@ set shiftwidth=4
 " spaced intead of tabs
 set expandtab
 
-" always set auto indenting on 
+" always set auto indenting on
 set autoindent
 
 " Line numbers
-:highlight LineNr ctermbg=DarkGrey 
+:highlight LineNr ctermbg=DarkGrey
 set numberwidth=3
 nmap <leader>n :set number!<CR>
 
@@ -124,3 +124,13 @@ map <leader>tm :tabmove
 " User left/right cursor keys for something usefull
 map <right> :bn<cr>
 map <left> :bp<cr>
+
+" -------------------------------------------------------------
+"  EditorConfig
+" -------------------------------------------------------------
+" EditorConfig core executable
+let g:EditorConfig_exec_path = '/usr/loca/bin/editorconfig'
+" work with Tim Pope's fugitive and don't
+let g:EditorConfig_exclude_patterns = ['fugitive://.*']
+" avoid loading EditorConfig for any remote files over ssh
+let g:EditorConfig_exclude_patterns = ['scp://.*']

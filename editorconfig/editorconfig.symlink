@@ -1,0 +1,30 @@
+# editorconfig.org
+
+# Yes this is the one .editorconfig to rule them all
+root = true
+
+[*]
+indent_style = tab
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# Java
+indent_style = space
+indent_size = 4
+;IntelliJ specific
+continuation_indent_size = 0
+
+# HTML, XML, Ruby
+[*.{html,xml,yml,rb}]
+indent_size = 2
+
+# Makefiles
+[Makefile]
+indent_style = tab
+indent_size = 8
+
+# Markdown
+[*.md]
+trim_trailing_whitespace = false
