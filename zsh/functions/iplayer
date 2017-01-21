@@ -1,0 +1,2 @@
+# BBC iPlayer ripping
+get_iplayer --type=radio --aactomp3 --pid=$1
