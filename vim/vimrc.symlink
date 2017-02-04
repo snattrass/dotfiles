@@ -57,17 +57,17 @@ set expandtab
 set autoindent
 
 " Line numbers
-:highlight LineNr ctermbg=DarkGrey
+set number          " turn on line numbers
+set relativenumber  " and make them relative
 set numberwidth=3
 nmap <leader>n :set number!<CR>
-
 
 " -------------------------------------------------------------
 "  UI
 " -------------------------------------------------------------
 
-" Syntax highlighting always please
-syntax on
+" Syntax highlighting please
+syntax enable
 
 " always show current position
 set ruler
@@ -94,6 +94,13 @@ set showmatch "Show matching bracets when text indicator is over them
 set mat=2 "How many tenths of a second to blink
 
 set encoding=utf-8
+
+" -------------------------------------------------------------
+"  Solarized
+" -------------------------------------------------------------
+set background=dark
+let g:solarized_termcolors=256
+colorscheme solarized
 
 " -------------------------------------------------------------
 "  Airline
