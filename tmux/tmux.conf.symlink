@@ -32,7 +32,10 @@ set -g pane-base-index 1
 #set -sg escape-time
 
 # reload tmux config with r
-bind r source-file ~/.tmux.conf
+#bind r source-file ~/.tmux.conf
+bind r source ~/.tmux.conf\; display "~/.tmux.conf sourced!"
+
+
 
 # set default terminal mode to 256 colors
 set -g default-terminal "screen-256color"
