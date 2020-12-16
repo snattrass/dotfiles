@@ -1,3 +1,3 @@
-export PATH="./bin:/usr/local/bin:/usr/local/sbin:$ZSH/bin:$PATH"
-
-export MANPATH="/usr/local/man:/usr/local/git/man:$MANPATH"
+typeset -U path     # avoid duplicates in the path array
+path+=$ZSH/bin
+export PATH
