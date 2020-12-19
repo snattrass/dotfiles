@@ -16,3 +16,5 @@ alias du="du -h"
 # handy short cuts
 alias h="history"
 alias j="jobs -l"
+alias htop="sudo htop"
+alias btop="bpytop"
