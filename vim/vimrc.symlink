@@ -12,7 +12,6 @@ Plug 'arcticicestudio/nord-vim'
 " Initialize plugin system
 call plug#end()
 
-
 " -------------------------------------------------------------
 "  General
 " -------------------------------------------------------------
@@ -43,8 +42,11 @@ nmap <leader>w :w!<cr>
 " Fast editing of the .vimrc
 map <leader>e :e! ~/.vimrc<cr>
 
-" When vimrc is edited, reload it
-autocmd! bufwritepost vimrc source ~/.vim_runtime/vimrc
+" When .vimrc is edited, reload it
+" We need to refer to ~/.vimrc explicitly since my $MYVIMRC
+" points to ~/.config/nvim/init.vim which already sources
+" ~/.vimrc
+autocmd! bufwritepost ~/.vimrc source $MYVIMRC
 
 " No sound on errors
 set noeb vb t_vb=
@@ -72,6 +74,9 @@ nmap <leader>n :set number!<CR>
 " -------------------------------------------------------------
 "  UI
 " -------------------------------------------------------------
+" Set the colour theme
+set termguicolors
+" colorscheme nord
 
 " Syntax highlighting please
 syntax enable
@@ -114,7 +119,6 @@ set encoding=utf-8
 " -------------------------------------------------------------
 set laststatus=2
 let g:airline_powerline_fonts=1
-set guifont=Source\ Code\ Pro\ for\ Powerline:h13 "make sure escaped
 
 let g:airline_enable_branch=1
 let g:airline#extensions#tabline#enabled=1
