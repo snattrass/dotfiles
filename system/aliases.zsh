@@ -9,6 +9,10 @@ then
   alias la='gls -A --color'
 fi
 
+# Use Neovim
+alias vi="nvim"
+alias vim="nvim"
+
 # default to readable figures
 alias df="df -h"
 alias du="du -h"
