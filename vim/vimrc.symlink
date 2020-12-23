@@ -1,9 +1,16 @@
 " -------------------------------------------------------------
-"  Pathogen (must be first)
+"  Plugins via vim-plug
 " -------------------------------------------------------------
-filetype off
-call pathogen#infect()
-call pathogen#helptags()
+" Specify a directory for plugins
+call plug#begin('~/.vim/pluginz')
+
+Plug 'vim-airline/vim-airline'
+Plug 'tpope/vim-fugitive'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'arcticicestudio/nord-vim'
+
+" Initialize plugin system
+call plug#end()
 
 
 " -------------------------------------------------------------
@@ -98,9 +105,9 @@ set encoding=utf-8
 " -------------------------------------------------------------
 "  Solarized
 " -------------------------------------------------------------
-set background=dark
-let g:solarized_termcolors=256
-colorscheme solarized
+" set background=dark
+" let g:solarized_termcolors=256
+" colorscheme solarized
 
 " -------------------------------------------------------------
 "  Airline
@@ -111,6 +118,7 @@ set guifont=Source\ Code\ Pro\ for\ Powerline:h13 "make sure escaped
 
 let g:airline_enable_branch=1
 let g:airline#extensions#tabline#enabled=1
+
 " -------------------------------------------------------------
 "  Files, backups and undo
 " -------------------------------------------------------------
