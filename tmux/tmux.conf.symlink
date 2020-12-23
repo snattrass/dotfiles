@@ -35,10 +35,11 @@ set -g pane-base-index 1
 #bind r source-file ~/.tmux.conf
 bind r source ~/.tmux.conf\; display "~/.tmux.conf sourced!"
 
-
-
+# True Colour
 # set default terminal mode to 256 colors
 set -g default-terminal "screen-256color"
+# tell Tmux that outside terminal supports true color
+set -ga terminal-overrides ",xterm-256color*:Tc"
 
 # Status bar customization
 #set -g status-utf8 on

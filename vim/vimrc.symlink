@@ -7,7 +7,10 @@ call plug#begin('~/.vim/pluginz')
 Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-fugitive'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'altercation/vim-colors-solarized'
 Plug 'arcticicestudio/nord-vim'
+Plug 'morhetz/gruvbox'
+Plug 'machakann/vim-highlightedyank'
 
 " Initialize plugin system
 call plug#end()
@@ -74,9 +77,8 @@ nmap <leader>n :set number!<CR>
 " -------------------------------------------------------------
 "  UI
 " -------------------------------------------------------------
-" Set the colour theme
+" Set True Colour support
 set termguicolors
-" colorscheme nord
 
 " Syntax highlighting please
 syntax enable
@@ -108,11 +110,10 @@ set mat=2 "How many tenths of a second to blink
 set encoding=utf-8
 
 " -------------------------------------------------------------
-"  Solarized
+"  Theme
 " -------------------------------------------------------------
-" set background=dark
-" let g:solarized_termcolors=256
-" colorscheme solarized
+ colorscheme gruvbox
+ set background=dark
 
 " -------------------------------------------------------------
 "  Airline
