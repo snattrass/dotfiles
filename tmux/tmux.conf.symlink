@@ -28,8 +28,8 @@ set -g base-index 1
 # start with pane 1
 set -g pane-base-index 1
 
-# shorten command delay
-#set -sg escape-time
+# shorten command delay (as recommended by Neovim :checkhealth)
+set -sg escape-time 10
 
 # reload tmux config with r
 #bind r source-file ~/.tmux.conf
