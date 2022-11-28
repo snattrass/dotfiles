@@ -1,2 +1,5 @@
 # ingnore netrw history
 .netrwhist
+
+# ignore vim-plug plugins
+pluginz/
