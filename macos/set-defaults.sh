@@ -7,10 +7,9 @@
 ###############################################################################
 
 # Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "grytviken"
-sudo scutil --set HostName "grytviken"
-sudo scutil --set LocalHostName "grytviken"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "grytviken"
+sudo scutil --set ComputerName "amity"
+sudo scutil --set HostName "amity"
+sudo scutil --set LocalHostName "amity"
 
 
 ###############################################################################
