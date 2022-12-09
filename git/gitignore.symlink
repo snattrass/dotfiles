@@ -2,7 +2,7 @@
 # Global git ignore linked in .gitconfig
 #
 
-# OSX
+# macOS
 .DS_Store
 DS_Store?
 .AppleDouble
@@ -17,3 +17,5 @@ DS_Store?
 # Vim
 *.swp
 
+# Temp files
+*~
