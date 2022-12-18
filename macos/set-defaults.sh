@@ -19,5 +19,7 @@ sudo scutil --set LocalHostName "amity"
 # Avoid creating .DS_Store files on network volumes
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 
+# show POSIX style path in title bar
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 # Show the ~/Library folder.
 #chflags nohidden ~/Library

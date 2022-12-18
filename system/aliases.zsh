@@ -17,6 +17,9 @@ alias vim="nvim"
 alias df="df -h"
 alias du="du -h"
 
+# colour those diffs
+alias diff=colordiff
+
 # handy short cuts
 alias h="history"
 alias j="jobs -l"
