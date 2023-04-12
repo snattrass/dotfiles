@@ -24,4 +24,3 @@ alias diff=colordiff
 alias h="history"
 alias j="jobs -l"
 alias htop="sudo htop"
-alias btop="bpytop"
