@@ -23,3 +23,11 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 # Show the ~/Library folder.
 #chflags nohidden ~/Library
+#
+
+###############################################################################
+# IntelliJ                                                                      #
+###############################################################################
+
+# setting key repeat for IntelliJ
+defaults write com.jetbrains.intellij.ce ApplePressAndHoldEnabled -bool false
